@@ -1,0 +1,58 @@
+{
+  "env": {
+    "node": true,
+    "browser": true,
+    "es6": true
+  },
+  "plugins": ["react", "prettier", "react-hooks"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": ["airbnb", "plugin:react/recommended", "prettier", "prettier/react"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "rules": {
+    "no-shadow": 0,
+    "no-console": 1,
+    "no-unused-vars": 1,
+    "no-case-declarations": 1,
+    "no-useless-escape": 1,
+    "no-underscore-dangle": 0,
+    "react-hooks/rules-of-hooks": 1,
+    "react-hooks/exhaustive-deps": 1,
+    "react/no-deprecated": 1,
+    "react/no-string-refs": 1,
+    "react/no-array-index-key": 1,
+    "react/jsx-indent-props": [2, 2],
+    "react/jsx-indent": [2, 2],
+    "react/forbid-prop-types": 0,
+    "react/jsx-max-props-per-line": [0, { "maximum": 3 }],
+    "react/jsx-filename-extension": 0,
+    "react/no-did-update-set-state": 0,
+    "react/jsx-props-no-spreading": [
+      2,
+      {
+        "custom": "ignore",
+        "exceptions": ["input", "textarea"]
+      }
+    ],
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/label-has-associated-control": 0,
+    "jsx-a11y/label-has-for": 0,
+    "import/prefer-default-export": 0,
+    "import/export": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/named": 0,
+    "import/imports-first": [2, "absolute-first"],
+    "import/newline-after-import": 2,
+    "jsx-a11y/anchor-is-valid": 0
+  }
+}
